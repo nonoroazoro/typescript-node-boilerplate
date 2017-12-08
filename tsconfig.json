@@ -2,7 +2,7 @@
     "compilerOptions": {
         "allowUnreachableCode": true,
         "allowUnusedLabels": false,
-        "declaration": false,
+        "declaration": true,
         "experimentalDecorators": true,
         "module": "commonjs",
         "noImplicitAny": true,
