@@ -4,6 +4,7 @@
     "author": "nonoroazoro",
     "description": "Minimal example for Node in TypeScript.",
     "main": "lib/src/index.js",
+    "typings": "lib/src/index.d.ts",
     "scripts": {
         "precommit": "lint-staged",
         "prestart": "npm run build",
