@@ -1,2 +1,3 @@
 # typescript-node-boilerplate
- Minimal example for Node in TypeScript.
+
+Minimal example for Node in TypeScript.

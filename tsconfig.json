@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "allowUnreachableCode": true,
+        "allowUnusedLabels": false,
+        "declaration": false,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "dist",
+        "pretty": true,
+        "rootDir": ".",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es2017",
+        "typeRoots": [
+            "src/typings"
+        ]
+    },
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

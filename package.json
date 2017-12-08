@@ -1,0 +1,46 @@
+{
+    "name": "typescript-node-boilerplate",
+    "version": "1.0.0",
+    "author": "nonoroazoro",
+    "description": "Minimal example for Node in TypeScript.",
+    "main": "dist/src/index.js",
+    "scripts": {
+        "precommit": "lint-staged",
+        "prestart": "npm run build",
+        "start": "cross-env NODE_ENV=production node dist/src/index.js",
+        "prebuild": "npm run clean",
+        "build": "tsc -p ./tsconfig.json --sourceMap false",
+        "watch": "tsc -p ./tsconfig.json -w",
+        "test": "mocha",
+        "clean": "rimraf dist/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nonoroazoro/typescript-node-boilerplate.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nonoroazoro/typescript-node-boilerplate/issues"
+    },
+    "homepage": "https://github.com/nonoroazoro/typescript-node-boilerplate#readme",
+    "dependencies": {
+        "cross-env": "^5.1.1",
+        "graphql-request": "^1.4.0"
+    },
+    "devDependencies": {
+        "@types/node": "^8.0.57",
+        "husky": "^0.14.3",
+        "lint-staged": "^6.0.0",
+        "mocha": "^4.0.1",
+        "rimraf": "^2.6.2",
+        "should": "^13.1.3",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.2"
+    },
+    "lint-staged": {
+        "./src/**/*.ts": [
+            "tslint",
+            "git add"
+        ]
+    }
+}
