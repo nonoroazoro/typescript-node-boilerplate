@@ -3,16 +3,16 @@
     "version": "1.0.0",
     "author": "nonoroazoro",
     "description": "Minimal example for Node in TypeScript.",
-    "main": "dist/src/index.js",
+    "main": "lib/src/index.js",
     "scripts": {
         "precommit": "lint-staged",
         "prestart": "npm run build",
-        "start": "cross-env NODE_ENV=production node dist/src/index.js",
+        "start": "cross-env NODE_ENV=production node lib/src/index.js",
         "prebuild": "npm run clean",
         "build": "tsc -p ./tsconfig.json --sourceMap false",
         "watch": "tsc -p ./tsconfig.json -w",
         "test": "mocha",
-        "clean": "rimraf dist/*"
+        "clean": "rimraf lib/*"
     },
     "repository": {
         "type": "git",

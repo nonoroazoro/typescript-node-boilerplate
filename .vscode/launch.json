@@ -8,7 +8,7 @@
             "preLaunchTask": "tsc-watch",
             "program": "${workspaceFolder}/src/index.ts",
             "outFiles": [
-                "${workspaceRoot}/dist/**/*.js"
+                "${workspaceRoot}/lib/**/*.js"
             ],
             "stopOnEntry": false,
             "sourceMaps": true
