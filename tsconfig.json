@@ -10,20 +10,13 @@
         "noImplicitThis": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "outDir": "lib",
+        "outDir": "dist",
         "pretty": true,
         "rootDir": ".",
         "skipLibCheck": true,
         "sourceMap": true,
         "strictNullChecks": true,
         "suppressImplicitAnyIndexErrors": true,
-        "target": "es2017",
-        "typeRoots": [
-            "src/typings"
-        ]
-    },
-    "exclude": [
-        "lib",
-        "node_modules"
-    ]
+        "target": "es2015"
+    }
 }
