@@ -1,14 +1,16 @@
 {
-    "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
-            "request": "launch",
+            "type": "pwa-node",
             "name": "Launch Program",
+            "request": "launch",
             "preLaunchTask": "tsc-watch",
             "program": "${workspaceFolder}/src/index.ts",
             "outFiles": [
                 "${workspaceRoot}/dist/**/*.js"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
             ],
             "stopOnEntry": false,
             "sourceMaps": true
